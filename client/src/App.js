@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Pages/Home";
+import {Paper} from "@mui/material";
+import CustomAppBar from "./Components/CustomAppBar";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Paper  style={{width : 'auto', height:'100vh', backgroundColor:"transparent" , border:'none', borderRadius:'none', padding:0, margin:0}}>
+      <CustomAppBar/>
+    </Paper>
   );
 }
 

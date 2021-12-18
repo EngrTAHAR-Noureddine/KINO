@@ -1,0 +1,1 @@
+export const black_80 = '#CC000000';
