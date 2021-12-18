@@ -1,4 +1,4 @@
-import {alpha, Box, Collapse, IconButton, InputBase} from "@mui/material";
+import {alpha, Box, Collapse, InputBase} from "@mui/material";
 import {useState} from "react";
 import {SEARCH_BUTTON} from "./IconButton";
 

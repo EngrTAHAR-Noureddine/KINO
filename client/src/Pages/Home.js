@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Paper} from '@mui/material'
+import {Box} from '@mui/material'
 import {Custom_Carrousel} from "../Themes/Elements/Carousel";
 
 

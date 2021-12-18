@@ -6,7 +6,7 @@ import {TYPOGRAPHY_MENU_XL, TYPOGRAPHY_LOGO} from "../Themes/Styles/Typographies
 import {MENU_BUTTON_XL} from "../Themes/Elements/Buttons";
 import {ThemeProvider} from "@emotion/react";
 import {SIGN_GROUP_THEME} from "../Themes/Theme/Themes";
-import {SearchBar} from "../Themes/Elements/Elements";
+import {SearchBar} from "../Themes/Elements/SearchBar";
 import {MENU_BUTTON} from "../Themes/Elements/IconButton";
 
 class CustomAppBar extends Component{
