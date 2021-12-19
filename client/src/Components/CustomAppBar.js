@@ -6,7 +6,7 @@ import {ThemeProvider} from "@emotion/react";
 import {SIGN_GROUP_THEME} from "../Themes/Theme/Themes";
 import {SearchBar} from "../Themes/Elements/SearchBar";
 import {MENU_BUTTON} from "../Themes/Elements/IconButton";
-import {ScrollToColor} from './../Themes/Animation/ScrollToColor';
+import {ScrollToColor} from '../Themes/Animation/ScrollToColor';
 
 
 function CustomAppBar() {
