@@ -1,9 +1,9 @@
 import {Button} from "@mui/material";
 import {TYPOGRAPHY_CONTENT_CARD_MOVIE, TYPOGRAPHY_MENU_XL, TYPOGRAPHY_SHORTCUT_LIST} from "../Styles/Typographies";
-import {ArrowForwardIosOutlined, Star} from "@mui/icons-material";
+import {ArrowDropDown, ArrowDropDownCircle, ArrowDropUp, ArrowForwardIosOutlined, Star} from "@mui/icons-material";
 import React from "react";
 import {MORE} from "../String/String";
-import {black_20, more_AE, white_100, white_20, yellow_100} from "../Styles/Color";
+import {black_20, black_30, more_AE, white_100, white_20, yellow_100} from "../Styles/Color";
 
 
 export const MENU_BUTTON_XL = (prop)=>(
@@ -49,5 +49,24 @@ export const SHORTCUT_LIST_BUTTON = (prop)=>(
 
         <TYPOGRAPHY_SHORTCUT_LIST item={prop.item}/>
 
+    </Button>
+);
+
+export const POPUP_MENU_BUTTON = (prop)=>(
+    <Button
+        endIcon={(!prop.state)?<ArrowDropDown/>:<ArrowDropUp/>}
+        sx={{
+            width:200,
+            color:white_100,
+            backgroundColor:black_30,
+            textTransform: 'none',
+            borderRadius:100,
+            px:2,
+            "&,&:focus,&:hover,&:active":{
+                backgroundColor:black_30
+            }
+        }}
+        onClick={prop.opening}>
+        <TYPOGRAPHY_MENU_XL item={prop.item}/>
     </Button>
 )

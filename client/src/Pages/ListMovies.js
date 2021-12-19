@@ -1,11 +1,11 @@
-import {Box, Button, Grid, Typography} from "@mui/material";
-import React from "react";
+import {Box, Grid, Typography} from "@mui/material";
+import React, {useState} from "react";
 import {MovieCard} from "../Themes/Elements/MovieCard";
 import {flex_styles} from "../Themes/Styles/styles";
 import {SHORTCUT_LIST_BUTTON} from "../Themes/Elements/Buttons";
-import {black_10, white_10} from "../Themes/Styles/Color";
+import {black_10, white_10, white_100} from "../Themes/Styles/Color";
 import {Seperator_Bar} from "../Themes/Elements/Seperator_Bar";
-
+import {CustomPopUpMenu} from "../Themes/Elements/CustomPopUpMenu";
 
 function ListMenu(prop){
     return (
@@ -45,7 +45,7 @@ function Result(prop){
         <Grid container height={'inherit'} width={'inherit'} xs={12} flexGrow={1} spacing={3} style={flex_styles.row_center}>
             {
 
-                prop.list.map((item)=>(
+                prop.list.map(()=>(
                     <Grid item xs={12} sm={6} md={4} lg={3} xl={2} style={flex_styles.row_center}>
                         <MovieCard/>
                     </Grid>))
@@ -56,9 +56,26 @@ function Result(prop){
 }
 
 function Filter_List() {
-    return(
-        <Grid item  xs={10} lg={8} height={'inherit'} width={'inherit'}>
+    const [retrive,setSelect]=useState('none');
+    const lan = 'Language';
+    const list = ['English','Arabic','French','German','Japanese','Chinese','Spanish','Arabic02','English02','French02'];
+    const callback = (item)=>{
+        setSelect(item);
+    }
 
+
+    return(
+        <Grid item  xs={10} lg={8} height={'inherit'} width={'inherit'}
+              borderRadius={10}
+              style={flex_styles.col_center}>
+
+            <Box height={'90%'} width={'90%'} mx={'auto'}  bgcolor={'transparent'}
+                 style={flex_styles.col_center} alignItems={'center'}>
+
+                <CustomPopUpMenu selected={lan} list={list} callback={callback}/>
+
+                <Typography color={white_100} variant={'h6'}>{retrive}</Typography>
+            </Box>
         </Grid>
     )
 }
