@@ -1,12 +1,14 @@
 import Carousel from "react-material-ui-carousel";
 import React from "react";
-import {alpha, Box, Paper} from "@mui/material";
+import { Box, Paper} from "@mui/material";
 import dark from '../../Asset/dark.jpg';
 import suits02 from '../../Asset/suits02.jpg';
 import suits from '../../Asset/Suits.jpg';
 import hitman from '../../Asset/hitmans-wifes.jpg';
 import notime from '../../Asset/no-time-to-die.jpg';
 import hannibal from '../../Asset/hannibal.jpg';
+import {IMAGE} from "./IMAGE";
+import {black_60} from "../Styles/Color";
 
 export  const Custom_Carrousel = () => {
 
@@ -55,6 +57,7 @@ function Item(props)
             sx={{
                 flexGrow: 1,
                 height:'50vh',
+                width:'100%',
                 backgroundColor:'transparent',
             }}>
             <Box
@@ -64,18 +67,10 @@ function Item(props)
                 width={"100%"}
                 sx={{
                     flexGrow: 1,
-                    backgroundColor:alpha('#000000',0.6),
+                    backgroundColor:black_60,
                 }}  />
+            <IMAGE url={props.item.url}/>
 
-            <Box
-                component="img"
-                height={'100%'}
-                width={'100%'}
-                position={'absolute'}
-                zIndex={0}
-                alt="img"
-                src={props.item.url}
-            />
         </Paper>
     )
 }
