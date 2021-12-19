@@ -12,16 +12,17 @@ export let RESPONSIVE_THEME = createTheme();
 RESPONSIVE_THEME = responsiveFontSizes(RESPONSIVE_THEME);
 
 
-/*
+
 export const themeTyp = createTheme();
 
-themeTyp.typography.h6 = {
-    [themeTyp.breakpoints.up('lg')]: {
-        fontSize: '0.8rem',
+themeTyp.typography.h5 = {
+    [themeTyp.breakpoints.down('md')]: {
+        fontSize: '0.5rem',
     },
-    [themeTyp.breakpoints.up('xl')]: {
-        fontSize: '1rem',
+    [themeTyp.breakpoints.up('md')]: {
+        fontSize: '1.2rem',
     },
+
 };
-*/
+
 

@@ -2,7 +2,7 @@ import { Typography} from "@mui/material";
 import {PoppinsFont} from "../Fonts/Fonts";
 import {LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
-import {RESPONSIVE_THEME} from "../Theme/Themes";
+import {RESPONSIVE_THEME, themeTyp} from "../Theme/Themes";
 import React from "react";
 
 
@@ -37,4 +37,15 @@ export const TYPOGRAPHY_CONTENT_CARD_MOVIE = (prop)=>(
     >
         {prop.item}
     </Typography>
+)
+
+export const TYPOGRAPHY_SHORTCUT_LIST = (prop)=>(
+    <ThemeProvider theme={themeTyp}>
+    <Typography variant={'h5'} color={'white'} fontWeight={'bolder'}
+                textAlign={'center'}
+                style={{ wordWrap: "break-word" }}
+    >
+        {prop.item}
+    </Typography>
+    </ThemeProvider>
 )
