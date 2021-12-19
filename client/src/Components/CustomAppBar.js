@@ -7,6 +7,7 @@ import {SIGN_GROUP_THEME} from "../Themes/Theme/Themes";
 import {SearchBar} from "../Themes/Elements/SearchBar";
 import {MENU_BUTTON} from "../Themes/Elements/IconButton";
 import {ScrollToColor} from '../Themes/Animation/ScrollToColor';
+import {flex_styles} from "../Themes/Styles/styles";
 
 
 function CustomAppBar() {
@@ -17,10 +18,7 @@ function CustomAppBar() {
             <AppBar position={"fixed"} sx={{backgroundColor: 'transparent'}}>
                 <Toolbar>
                     <Grid container xs={12}>
-                        <Grid item xs={6} xl={4} bgcolor={'transparent'}
-                              display={'flex'}
-                              flexDirection={'row'}
-                              justifyContent={'left'}>
+                        <Grid item xs={6} xl={4} bgcolor={'transparent'} style={flex_styles.row_left}>
 
                             <MENU_BUTTON/>
                             <TYPOGRAPHY_LOGO/>
@@ -37,15 +35,9 @@ function CustomAppBar() {
                                 <MENU_BUTTON_XL item={WWE}/>
                             </div>
                         </Grid>
-                        <Grid item xs={6} xl={4}
-                              display={'flex'}
-                              flexDirection={'column'}
-                              justifyContent={'center'}>
+                        <Grid item xs={6} xl={4} style={flex_styles.col_center}>
                             <div>
-                                <Grid container xs={12}
-                                      display={'flex'}
-                                      flexDirection={'row'}
-                                      justifyContent={'right'}>
+                                <Grid container xs={12} style={flex_styles.row_right}>
 
                                     <Grid item xs={12} xl={9}>
                                         <SearchBar/>
