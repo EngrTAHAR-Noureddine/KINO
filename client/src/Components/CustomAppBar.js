@@ -1,7 +1,7 @@
 import {Component} from "react";
 import {AppBar, Box, Button, ButtonGroup, Grid, Toolbar} from '@mui/material';
 import {black_80} from "../Themes/Styles/Color";
-import { MENU_ITEM_01, MENU_ITEM_02, MENU_ITEM_03, MENU_ITEM_04, SIGN_IN, SIGN_UP} from "../Themes/String/String";
+import { MOVIES, SERIES, ANIME, WWE, SIGN_IN, SIGN_UP} from "../Themes/String/String";
 import {TYPOGRAPHY_MENU_XL, TYPOGRAPHY_LOGO} from "../Themes/Styles/Typographies";
 import {MENU_BUTTON_XL} from "../Themes/Elements/Buttons";
 import {ThemeProvider} from "@emotion/react";
@@ -31,10 +31,10 @@ class CustomAppBar extends Component{
                                       flexDirection={'column'} alignItems={'center'}
                                       justifyContent={'center'}>
                                     <div>
-                                    <MENU_BUTTON_XL item={MENU_ITEM_01}/>
-                                    <MENU_BUTTON_XL item={MENU_ITEM_02}/>
-                                    <MENU_BUTTON_XL item={MENU_ITEM_03}/>
-                                    <MENU_BUTTON_XL item={MENU_ITEM_04}/>
+                                    <MENU_BUTTON_XL item={MOVIES}/>
+                                    <MENU_BUTTON_XL item={SERIES}/>
+                                    <MENU_BUTTON_XL item={ANIME}/>
+                                    <MENU_BUTTON_XL item={WWE}/>
                                     </div>
                                 </Grid>
                                 <Grid item xs={6} xl={4}

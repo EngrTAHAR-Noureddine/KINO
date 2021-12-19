@@ -1,7 +1,11 @@
 export const LOGO = 'KINO';
-export const  MENU_ITEM_01= 'Movies';
-export const MENU_ITEM_02 = 'Series';
-export const MENU_ITEM_03 = 'Anime';
-export const MENU_ITEM_04 = 'WWE';
+export const  MOVIES= 'Movies';
+export const SERIES = 'Series';
+export const ANIME = 'Anime';
+export const WWE = 'WWE';
 export const SIGN_UP = 'SignUp';
 export const SIGN_IN = 'SignIn';
+
+export const MORE = 'More';
+export const LATEST_ADDITIONS = 'Latest Additions';
+export const MOST_WATCHED = 'Most Watched';

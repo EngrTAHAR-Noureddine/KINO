@@ -13,5 +13,10 @@ export const flex_styles = {
         display:'flex',
         flexDirection:'row',
         justifyContent:'right'
+    },
+    row_left:{
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'left'
     }
 };
