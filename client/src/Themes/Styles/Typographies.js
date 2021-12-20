@@ -4,6 +4,7 @@ import {LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
+import {white_EC} from "./Color";
 
 
 export const  TYPOGRAPHY_LOGO = ()=>(
@@ -65,4 +66,15 @@ export const TYPOGRAPHY_POPUP_MENU = (prop) => (
         {prop.item}
     </Typography>
     </ThemeProvider>
+);
+
+export const TYPOGRAPHY_SEARCH_RESULT = (prop)=>(
+    <Typography variant={'h5'} width={'inherit'} height={'auto'} textAlign={'left'}
+                color={white_EC}
+                fontFamily={PoppinsFont}
+                fontWeight={prop.Weight}
+                style={{ wordWrap: "break-word" }}
+                >
+        {prop.item}
+    </Typography>
 )

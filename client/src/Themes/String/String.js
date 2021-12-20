@@ -8,6 +8,7 @@ export const SIGN_IN = 'SignIn';
 export const MORE = 'More';
 export const LATEST_ADDITIONS = 'Latest Additions';
 export const MOST_WATCHED = 'Most Watched';
+export const SEARCH = 'Search :';
 
 export const FILTER_LIST = [
 
