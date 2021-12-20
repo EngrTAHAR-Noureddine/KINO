@@ -78,3 +78,13 @@ export const TYPOGRAPHY_SEARCH_RESULT = (prop)=>(
         {prop.item}
     </Typography>
 )
+export const TYPOGRAPHY_NAME_PERSON = (prop)=>(
+    <Typography variant={'h4'} width={'100%'} height={'100%'} textAlign={'center'}
+                color={white_EC}
+                fontFamily={PoppinsFont}
+                fontWeight={prop.Weight}
+                style={{ wordWrap: "break-word"}}
+    >
+        {prop.item}
+    </Typography>
+);
