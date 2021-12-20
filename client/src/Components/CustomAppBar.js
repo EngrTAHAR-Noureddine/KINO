@@ -1,5 +1,5 @@
 import {AppBar, Box, Button, ButtonGroup, Grid, Toolbar} from '@mui/material';
-import {ANIME, MOVIES, SERIES, SIGN_IN, SIGN_UP, WWE} from "../Themes/String/String";
+import {ANIME, MOVIES, SERIES, SIGNIN, SIGNUP, WWE} from "../Themes/String/String";
 import {TYPOGRAPHY_LOGO, TYPOGRAPHY_MENU_XL} from "../Themes/Styles/Typographies";
 import {MENU_BUTTON_XL} from "../Themes/Elements/Buttons";
 import {ThemeProvider} from "@emotion/react";
@@ -52,10 +52,10 @@ function CustomAppBar() {
                                             <ThemeProvider theme={SIGN_GROUP_THEME}>
                                                 <ButtonGroup variant="text">
                                                     <Button sx={{textTransform: 'none'}}>
-                                                        <TYPOGRAPHY_MENU_XL item={SIGN_IN}/>
+                                                        <TYPOGRAPHY_MENU_XL item={SIGNIN}/>
                                                     </Button>
                                                     <Button sx={{textTransform: 'none'}}>
-                                                        <TYPOGRAPHY_MENU_XL item={SIGN_UP}/>
+                                                        <TYPOGRAPHY_MENU_XL item={SIGNUP}/>
                                                     </Button>
                                                 </ButtonGroup>
                                             </ThemeProvider>

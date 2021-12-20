@@ -9,6 +9,7 @@ export const black_10 = alpha('#000000',0.1);
 
 // ------------- White Opacity ----------------
 export const white_100='#FFFFFF';
+export const white_05 = alpha('#FFFFFF',0.05);
 export const white_10 = alpha('#FFFFFF',0.1);
 export const white_20 = alpha('#FFFFFF',0.2);
 
@@ -18,4 +19,6 @@ export const more_AE = '#AEADB2';
 export const yellow_100 = 'yellow';
 export const white_EC = '#ECECEE';
 export const blue_36 = '#36A4FA';
+export const blue_0A = '#0A84FF';
 export const white_7070 = '#707070';
+

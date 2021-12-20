@@ -4,7 +4,8 @@ import {LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
-import {white_7070, white_EC} from "./Color";
+import {white_100, white_7070, white_EC} from "./Color";
+import {flex_styles} from "./styles";
 
 
 export const  TYPOGRAPHY_LOGO = ()=>(
@@ -108,4 +109,15 @@ export const TYPOGRAPHY_PAGE_NOT_FOUND = (prop)=>(
         </ThemeProvider>
     </Box>
 
-)
+);
+
+export const TYPOGRAPHY_SIGN_TITLE = (prop)=>(
+    <ThemeProvider theme={RESPONSIVE_THEME}>
+    <Typography variant={'h4'} width={'100%'}
+                color={white_100}
+                fontFamily={PoppinsFont}
+                height={'100%'} style={flex_styles.col_center} textAlign={'center'}>
+        {prop.title}
+    </Typography>
+    </ThemeProvider>
+);
