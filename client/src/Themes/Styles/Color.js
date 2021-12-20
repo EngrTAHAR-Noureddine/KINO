@@ -17,3 +17,4 @@ export const divider_B1 = '#B1B1B3';
 export const more_AE = '#AEADB2';
 export const yellow_100 = 'yellow';
 export const white_EC = '#ECECEE';
+export const blue_36 = '#36A4FA';
