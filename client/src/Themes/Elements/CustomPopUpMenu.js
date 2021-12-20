@@ -18,7 +18,7 @@ export function CustomPopUpMenu(prop) {
     }
     const Choose = (index) => {
         setSelector(prop.list[index]);
-        prop.callback(prop.list[index]);
+        prop.callback(prop.list[index],prop.selected);
         setState(false)
     }
 
