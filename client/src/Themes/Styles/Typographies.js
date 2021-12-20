@@ -33,6 +33,8 @@ export const TYPOGRAPHY_MENU_XL = (prop)=>(
 export const TYPOGRAPHY_CONTENT_CARD_MOVIE = (prop)=>(
     <Typography variant={'h5'} color={'white'} fontWeight={'bolder'}
                 textAlign={'center'}
+                fontStyle={"normal"}
+                fontFamily={PoppinsFont}
                 style={{ wordWrap: "break-word" }}
     >
         {prop.item}
@@ -43,6 +45,8 @@ export const TYPOGRAPHY_SHORTCUT_LIST = (prop)=>(
     <ThemeProvider theme={themeTyp}>
     <Typography variant={'h5'} color={'white'} fontWeight={'bolder'}
                 textAlign={'center'}
+                fontStyle={"normal"}
+                fontFamily={PoppinsFont}
                 style={{ wordWrap: "break-word" }}
     >
         {prop.item}
@@ -54,6 +58,8 @@ export const TYPOGRAPHY_POPUP_MENU = (prop) => (
     <ThemeProvider theme={themeTypH6}>
     <Typography variant={'h6'} color={'white'} fontWeight={'bolder'}
                 textAlign={'center'}
+                fontStyle={"normal"}
+                fontFamily={PoppinsFont}
                 style={{ wordWrap: "break-word" }}
     >
         {prop.item}
