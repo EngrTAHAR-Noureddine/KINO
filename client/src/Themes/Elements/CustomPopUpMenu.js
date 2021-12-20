@@ -10,8 +10,8 @@ export function CustomPopUpMenu(prop) {
     const [open, setState] = useState(false);
     const [selected, setSelector] = useState(prop.selected);
 
-    const Opening = ()=>{
-        setState(true)
+    const Toggle = ()=>{
+        setState(!open)
     }
     const Closing = () => {
         setState(false)
@@ -36,12 +36,12 @@ export function CustomPopUpMenu(prop) {
         );
     }
     return(
-        <Box >
-            <POPUP_MENU_BUTTON state={open}  opening={Opening} item={selected}/>
+        <Box>
+            <POPUP_MENU_BUTTON state={open}  toggle={Toggle} item={selected}/>
 
             <Box display={(open)?'flex':'none'}
                  zIndex={(open)?10:0} position={(open)?'absolute':'static'}
-                 height={'auto'} width={'auto'} onMouseLeave={Closing}>
+                 height={'auto'} width={'inherit'} onMouseLeave={Closing}>
                 <FixedSizeList
                     height={300}
                     width={200}
