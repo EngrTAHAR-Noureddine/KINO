@@ -42,4 +42,12 @@ themeTypH6.typography.h6 = {
 
 };
 
+export let themeTab = createTheme();
+themeTab.palette.primary = {
+    main:'#36A4FA'
+};
+themeTab.palette.secondary = {
+    main:'#0040DD'
+};
+
 

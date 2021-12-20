@@ -1,6 +1,5 @@
 import {Avatar, Box} from "@mui/material";
 import {flex_styles} from "../Styles/styles";
-
 import {white_EC} from "../Styles/Color";
 import {TYPOGRAPHY_NAME_PERSON} from "../Styles/Typographies";
 
