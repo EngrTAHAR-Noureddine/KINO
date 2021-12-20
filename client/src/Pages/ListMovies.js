@@ -1,8 +1,8 @@
-import {Box, Grid, Typography} from "@mui/material";
+import {Box, Button, Grid, Typography} from "@mui/material";
 import React, {useState} from "react";
 import {MovieCard} from "../Themes/Elements/MovieCard";
 import {flex_styles} from "../Themes/Styles/styles";
-import {SHORTCUT_LIST_BUTTON} from "../Themes/Elements/Buttons";
+import {FILTER_BUTTON, SHORTCUT_LIST_BUTTON} from "../Themes/Elements/Buttons";
 import {black_10, white_10, white_100} from "../Themes/Styles/Color";
 import {Seperator_Bar} from "../Themes/Elements/Seperator_Bar";
 import {CustomPopUpMenu} from "../Themes/Elements/CustomPopUpMenu";
@@ -56,25 +56,45 @@ function Result(prop){
 }
 
 function Filter_List() {
-    const [retrive,setSelect]=useState('none');
+    const [selector,setSelect]=useState('none');
     const lan = 'Language';
     const list = ['English','Arabic','French','German','Japanese','Chinese','Spanish','Arabic02','English02','French02'];
     const callback = (item)=>{
         setSelect(item);
     }
-
+//  <CustomPopUpMenu selected={lan} list={list} callback={callback}/>
 
     return(
         <Grid item  xs={10} lg={8} height={'inherit'} width={'inherit'}
               borderRadius={10}
               style={flex_styles.col_center}>
 
-            <Box height={'90%'} width={'90%'} mx={'auto'}  bgcolor={'transparent'}
-                 style={flex_styles.col_center} alignItems={'center'}>
+            <Box height={'90%'} width={'90%'} mx={'auto'}  bgcolor={'white'}>
 
-                <CustomPopUpMenu selected={lan} list={list} callback={callback}/>
+                <Grid container width={"100%"} height={"100%"}
+                    direction={'column'}
+                      justifyContent={'center'}
+                      alignItems={'center'}
+                      bgcolor={'violet'}
+                    >
 
-                <Typography color={white_100} variant={'h6'}>{retrive}</Typography>
+                    <Grid item xs={10} width={'inherit'} height={'inherit'} bgcolor={'yellow'}>
+                            <Box width={'100%'} height={'100%'} bgcolor={'green'} style={flex_styles.row_center}
+                                flexWrap={'wrap'}
+                            >
+                                <Box m={1}>
+                                    <CustomPopUpMenu selected={lan} list={list} callback={callback}/>
+                                </Box>
+                            </Box>
+                    </Grid>
+                    <Grid item xs={2} width={'inherit'} height={'inherit'} style={flex_styles.col_center} px={2}>
+                       <FILTER_BUTTON/>
+                    </Grid>
+
+                </Grid>
+
+
+
             </Box>
         </Grid>
     )

@@ -24,5 +24,22 @@ themeTyp.typography.h5 = {
     },
 
 };
+export const themeTypH6 = createTheme();
+
+themeTypH6.typography.h6 = {
+    [themeTypH6.breakpoints.up('sm')]: {
+        fontSize: '0.6rem',
+    },
+    [themeTypH6.breakpoints.up('md')]: {
+        fontSize: '0.7rem',
+    },
+    [themeTypH6.breakpoints.up('lg')]: {
+        fontSize: '0.7rem',
+    },
+    [themeTypH6.breakpoints.up('xl')]: {
+        fontSize: '1.2rem',
+    },
+
+};
 
 
