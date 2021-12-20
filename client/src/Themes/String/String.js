@@ -9,6 +9,7 @@ export const MORE = 'More';
 export const LATEST_ADDITIONS = 'Latest Additions';
 export const MOST_WATCHED = 'Most Watched';
 export const SEARCH = 'Search :';
+export const PAGE_NOT_FOUND = 'Page not found';
 
 export const FILTER_LIST = [
 

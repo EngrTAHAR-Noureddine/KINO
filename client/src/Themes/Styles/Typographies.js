@@ -4,7 +4,7 @@ import {LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
-import {white_EC} from "./Color";
+import {white_7070, white_EC} from "./Color";
 
 
 export const  TYPOGRAPHY_LOGO = ()=>(
@@ -91,8 +91,21 @@ export const TYPOGRAPHY_NAME_PERSON = (prop)=>(
 
 export const TYPOGRAPHY_GIG_TITLE_UNDERLINED = (prop)=>(
     <Box flexGrow={1} px={5}>
-        <Typography variant={'h5'} textAlign={'center'} fontFamily={PoppinsFont} color={'white'} sx={{borderBottom:1, borderColor:'white'}} mb={5}>
+        <Typography variant={'h5'} textAlign={'center'} fontFamily={PoppinsFont}
+                    color={'white'} sx={{borderBottom:1, borderColor:'white'}} mb={5}>
             {prop.what} ({prop.number})
         </Typography>
     </Box>
+)
+export const TYPOGRAPHY_PAGE_NOT_FOUND = (prop)=>(
+
+    <Box flexGrow={1} px={5}>
+        <ThemeProvider theme={RESPONSIVE_THEME}>
+        <Typography variant={'h2'} textAlign={'center'} fontFamily={PoppinsFont}
+                    color={white_7070}>
+            {prop.title}
+        </Typography>
+        </ThemeProvider>
+    </Box>
+
 )

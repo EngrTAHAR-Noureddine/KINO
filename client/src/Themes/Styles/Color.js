@@ -18,3 +18,4 @@ export const more_AE = '#AEADB2';
 export const yellow_100 = 'yellow';
 export const white_EC = '#ECECEE';
 export const blue_36 = '#36A4FA';
+export const white_7070 = '#707070';
