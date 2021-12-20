@@ -1,4 +1,4 @@
-import { Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import {PoppinsFont} from "../Fonts/Fonts";
 import {LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
@@ -88,3 +88,11 @@ export const TYPOGRAPHY_NAME_PERSON = (prop)=>(
         {prop.item}
     </Typography>
 );
+
+export const TYPOGRAPHY_GIG_TITLE_UNDERLINED = (prop)=>(
+    <Box flexGrow={1} px={5}>
+        <Typography variant={'h5'} textAlign={'center'} fontFamily={PoppinsFont} color={'white'} sx={{borderBottom:1, borderColor:'white'}} mb={5}>
+            {prop.what} ({prop.number})
+        </Typography>
+    </Box>
+)
