@@ -3,12 +3,12 @@ import {
     TYPOGRAPHY_CONTENT_CARD_MOVIE,
     TYPOGRAPHY_MENU_XL,
     TYPOGRAPHY_POPUP_MENU,
-    TYPOGRAPHY_SHORTCUT_LIST
+    TYPOGRAPHY_SHORTCUT_LIST, TYPOGRAPHY_SIGN_TITLE
 } from "../Styles/Typographies";
 import {ArrowDropDown, ArrowDropUp, ArrowForwardIosOutlined, Star} from "@mui/icons-material";
 import React from "react";
 import {MORE} from "../String/String";
-import {black_20, black_30, more_AE, white_100, white_20, yellow_100} from "../Styles/Color";
+import {black_20, black_30, blue_0A, divider_B1, more_AE, white_100, white_20, yellow_100} from "../Styles/Color";
 import {PoppinsFont} from "../Fonts/Fonts";
 import {flex_styles} from "../Styles/styles";
 
@@ -97,7 +97,13 @@ export const FILTER_BUTTON = () => (
 
 export const SIGN_BUTTON = ()=>(
     <Box width={'90%'} height={'100%'} style={flex_styles.col_center} alignItems={'center'}
-                sx={{borderBottom:1, borderColor:'black'}}>
-        <Button fullWidth p={1} mx={10}>Log in </Button>
+                sx={{borderBottom:1, borderColor:divider_B1,
+                }}>
+        <Button sx={{textTransform: 'none',px:10, backgroundColor:blue_0A, color:white_100, borderRadius:1000,
+            "& , &:focus, &:hover":{
+                backgroundColor:blue_0A,
+            }}}>
+            <TYPOGRAPHY_SIGN_TITLE title={'Sign In'}/>
+        </Button>
     </Box>
 )

@@ -13,6 +13,7 @@ export  function InputField(prop) {
                 fullWidth={true}
                 id="outlined-adornment-password"
                 type={prop.type}
+                placeholder={prop.placeholder}
                 sx={{ borderRadius: 1000,border:1, borderColor:white_100 , color:white_100 }}
             />
         </Box>

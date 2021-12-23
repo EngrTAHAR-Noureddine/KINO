@@ -4,7 +4,7 @@ import {FORGET_PASSWORD, LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
-import {white_100, white_7070, white_EC} from "./Color";
+import {blue_0A, white_100, white_7070, white_EC} from "./Color";
 import {flex_styles} from "./styles";
 
 
@@ -123,7 +123,7 @@ export const TYPOGRAPHY_SIGN_TITLE = (prop)=>(
 );
 
 export const TYPOGRAPHY_FORGET_PASSWORD =()=>(
-    <Typography variant={'body2'} color={'white'}>
+    <Typography variant={'body2'} color={blue_0A} fontFamily={PoppinsFont} fontWeight={'lighter'} textAlign={'right'} px={5}>
         {FORGET_PASSWORD}
     </Typography>
 );
@@ -133,4 +133,14 @@ export  const TYPOGRAPHY_STYLE_EMAIL_PASSWORD = (prop)=>(
                 fontFamily={PoppinsFont} px={1}>
         {prop.title}
     </Typography>
+);
+
+export const TYPOGRAPHY_SIGN_WITH = (prop) => (
+    <ThemeProvider theme={RESPONSIVE_THEME}>
+    <Typography variant={'h6'} width={'100%'}
+                color={white_100}
+                fontFamily={PoppinsFont} textAlign={'center'}>
+        {prop.text}
+    </Typography>
+    </ThemeProvider>
 )

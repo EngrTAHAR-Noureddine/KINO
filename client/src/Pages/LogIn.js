@@ -43,7 +43,7 @@ export function LogIn(){
                             <Grid item xs={2} width={'100%'}>
                                 <PasswordField placeholder={'password'} title={'Password:'}/>
                             </Grid>
-                            <Grid item xs={2} width={'100%'}>
+                            <Grid item xs={1} width={'100%'}>
                                 <TYPOGRAPHY_FORGET_PASSWORD/>
                             </Grid>
                             <Grid item xs={2} style={flex_styles.row_center}
