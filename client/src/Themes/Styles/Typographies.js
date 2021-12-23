@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {PoppinsFont} from "../Fonts/Fonts";
-import {LOGO} from "../String/String";
+import {FORGET_PASSWORD, LOGO} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
@@ -121,3 +121,16 @@ export const TYPOGRAPHY_SIGN_TITLE = (prop)=>(
     </Typography>
     </ThemeProvider>
 );
+
+export const TYPOGRAPHY_FORGET_PASSWORD =()=>(
+    <Typography variant={'body2'} color={'white'}>
+        {FORGET_PASSWORD}
+    </Typography>
+);
+export  const TYPOGRAPHY_STYLE_EMAIL_PASSWORD = (prop)=>(
+    <Typography variant={'h6'} flexGrow={1} height={'auto'}
+                color={white_100}
+                fontFamily={PoppinsFont} px={1}>
+        {prop.title}
+    </Typography>
+)
