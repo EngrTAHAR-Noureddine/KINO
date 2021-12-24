@@ -6,14 +6,17 @@ import Search from "./Pages/Search";
 import Actor from "./Pages/Actor";
 import Profile from "./Pages/Profile";
 import {PageNotFound} from "./Pages/404";
-import {LogIn} from "./Pages/LogIn";
+import {Sign} from "./Pages/Sign";
+import {SIGN_IN, SIGN_UP} from "./Themes/String/String";
 
+
+//<LogIn type={SIGN_UP}/>
 
 function App() {
   return (
-    <Paper  style={{width : 'auto', height:'100vh', backgroundColor:"transparent" , border:'none', borderRadius:'none', padding:0, margin:0}}>
+    <Paper  elevation={0} style={{width : 'auto', height:'auto', backgroundColor:"transparent" , border:'none', borderRadius:'none', padding:0, margin:0}}>
       <CustomAppBar/>
-      <LogIn/>
+        <Sign type={SIGN_IN}/>
     </Paper>
   );
 }

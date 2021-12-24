@@ -7,8 +7,18 @@ import {
 } from "../Styles/Typographies";
 import {ArrowDropDown, ArrowDropUp, ArrowForwardIosOutlined, Star} from "@mui/icons-material";
 import React from "react";
-import {MORE} from "../String/String";
-import {black_20, black_30, blue_0A, divider_B1, more_AE, white_100, white_20, yellow_100} from "../Styles/Color";
+import {MORE, SIGN_IN} from "../String/String";
+import {
+    black_20,
+    black_30,
+    blue_0A,
+    divider_B1,
+    green_34,
+    more_AE,
+    white_100,
+    white_20,
+    yellow_100
+} from "../Styles/Color";
 import {PoppinsFont} from "../Fonts/Fonts";
 import {flex_styles} from "../Styles/styles";
 
@@ -95,15 +105,15 @@ export const FILTER_BUTTON = () => (
     </Button>
 )
 
-export const SIGN_BUTTON = ()=>(
+export const SIGN_BUTTON = (prop)=>(
     <Box width={'90%'} height={'100%'} style={flex_styles.col_center} alignItems={'center'}
                 sx={{borderBottom:1, borderColor:divider_B1,
                 }}>
-        <Button sx={{textTransform: 'none',px:10, backgroundColor:blue_0A, color:white_100, borderRadius:1000,
+        <Button sx={{textTransform: 'none',px:10, backgroundColor:(prop.type === SIGN_IN)?blue_0A:green_34, color:white_100, borderRadius:1000,
             "& , &:focus, &:hover":{
-                backgroundColor:blue_0A,
+                backgroundColor:(prop.type === SIGN_IN)?blue_0A:green_34
             }}}>
-            <TYPOGRAPHY_SIGN_TITLE title={'Sign In'}/>
+            <TYPOGRAPHY_SIGN_TITLE title={prop.type}/>
         </Button>
     </Box>
 )

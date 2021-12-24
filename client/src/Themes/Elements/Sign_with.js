@@ -1,15 +1,14 @@
-import {Avatar, Box, IconButton} from "@mui/material";
+import { Box, IconButton} from "@mui/material";
 import {TYPOGRAPHY_SIGN_WITH} from "../Styles/Typographies";
-import {OR_SIGN_IN_WITH} from "../String/String";
 import {flex_styles} from "../Styles/styles";
-import {Facebook, FacebookOutlined, FacebookRounded, FacebookSharp, FacebookTwoTone, Google} from "@mui/icons-material";
-import {blue_0A, white_100} from "../Styles/Color";
+import { FacebookOutlined,  Google} from "@mui/icons-material";
+import {blue_0A} from "../Styles/Color";
 
-export const SignWith = () => {
+export const SignWith = (prop) => {
 
     return(
         <Box style={flex_styles.col_center} alignItems={'center'}>
-            <TYPOGRAPHY_SIGN_WITH text={OR_SIGN_IN_WITH}/>
+            <TYPOGRAPHY_SIGN_WITH text={prop.text}/>
             <Box width={'90%'} style={flex_styles.row_center} textAlign={'center'}>
                 <IconButton  sx={{
                     color:'red',

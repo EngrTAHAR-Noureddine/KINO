@@ -18,7 +18,7 @@ export const PASSWORD = 'Password:';
 export const FORGET_PASSWORD = 'do you forget a password?';
 export const OR_SIGN_IN_WITH = 'or sign in with:';
 export const DONT_HAVE_ACCOUNT = 'don\'t have account?';
-export const NAME = 'Name';
+export const NAME = 'Name:';
 export const OR_SIGN_UP_WITH = 'or sign up with:';
 export const HAVE_ACCOUNT = 'do you have an account?';
 

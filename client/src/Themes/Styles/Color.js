@@ -21,4 +21,5 @@ export const white_EC = '#ECECEE';
 export const blue_36 = '#36A4FA';
 export const blue_0A = '#0A84FF';
 export const white_7070 = '#707070';
+export const green_34 = '#34C85A';
 
