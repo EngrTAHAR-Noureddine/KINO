@@ -33,6 +33,7 @@ export const TYPOGRAPHY_MENU_XL = (prop)=>(
 );
 
 export const TYPOGRAPHY_CONTENT_CARD_MOVIE = (prop)=>(
+    <ThemeProvider theme={themeTyp}>
     <Typography variant={'h5'} color={'white'} fontWeight={'bolder'}
                 textAlign={'center'}
                 fontStyle={"normal"}
@@ -41,7 +42,8 @@ export const TYPOGRAPHY_CONTENT_CARD_MOVIE = (prop)=>(
     >
         {prop.item}
     </Typography>
-)
+    </ThemeProvider>
+);
 
 export const TYPOGRAPHY_SHORTCUT_LIST = (prop)=>(
     <ThemeProvider theme={themeTyp}>
@@ -161,4 +163,29 @@ export const TYPOGRAPHY_IF_HAVE_ACCOUNT = (prop) => (
         </Box>
 
     </ThemeProvider>
-)
+);
+export const TYPOGRAPHY_TITLE_MOVIE = (prop)=>(
+    <ThemeProvider theme={RESPONSIVE_THEME}>
+    <Typography variant={'h3'} width={'inherit'} textAlign={'left'}
+                color={white_EC}
+                fontFamily={PoppinsFont}
+                fontWeight={prop.Weight}
+                style={{ wordWrap: "break-word" }}
+    >
+        {prop.item}
+    </Typography>
+    </ThemeProvider>
+);
+
+export const TYPOGRAPHY_STORY = (prop)=>(
+    <ThemeProvider theme={themeTypH6}>
+        <Typography variant={'h6'} width={'inherit'} textAlign={'center'}
+                    color={white_EC}
+                    fontFamily={PoppinsFont}
+                    fontWeight={'normal'}
+                    style={{ wordWrap: "break-word" }}
+        >
+            {prop.item}
+        </Typography>
+    </ThemeProvider>
+);

@@ -58,3 +58,5 @@ export const FILTER_LIST = [
 ];
 
 export const LIST_SHORTCUTS = ['List','2021' ,'Trending'];
+
+export const STORY='When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids.';

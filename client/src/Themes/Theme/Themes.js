@@ -18,7 +18,7 @@ export const themeTyp = createTheme();
 
 themeTyp.typography.h5 = {
     [themeTyp.breakpoints.down('md')]: {
-        fontSize: '0.5rem',
+        fontSize: '0.7rem',
     },
     [themeTyp.breakpoints.up('md')]: {
         fontSize: '1.2rem',
