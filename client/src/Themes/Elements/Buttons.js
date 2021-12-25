@@ -120,7 +120,7 @@ export const SIGN_BUTTON = (prop)=>(
 
 export const CONTAINER_NUMBER_BUTTON = (prop) =>(
     <Button sx={{backgroundColor:black_80,
-        color:white_100,p:2, px:10, margin:2, borderRadius:5, fontSize:'1rem',
+        color:white_100,p:2, px: {xs:2, lg:10}, margin:2, borderRadius:5, fontSize:'1rem',
         "&:hover":{
             backgroundColor:blue_0A
         }}}>

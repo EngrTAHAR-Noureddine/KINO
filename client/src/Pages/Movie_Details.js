@@ -38,7 +38,18 @@ export function Movie_Details() {
                 ))}
             </SectionDetail>
 
+            <Box flexGrow={1} mx={5} height={'90vh'} bgcolor={'blue'}>
 
+            </Box>
+
+
+            <SectionDetail title={EPISODES}>
+                {list.map((item)=>(
+
+                    <CONTAINER_NUMBER_BUTTON item={item}/>
+
+                ))}
+            </SectionDetail>
 
         </Box>
     )
