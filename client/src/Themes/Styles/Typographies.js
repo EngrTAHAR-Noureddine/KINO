@@ -203,3 +203,20 @@ export const TYPOGRAPHY_DETAILS = (prop)=>(
         </Typography>
     </ThemeProvider>
 );
+
+export const TYPOGRAPHY_NAME_ACTOR = (prop)=>(
+    <ThemeProvider theme={themeTyp}>
+    <Typography variant={'h5'} width={'90%'} textAlign={'center'} color={blue_0A}
+                fontFamily={PoppinsFont} fontWeight={'bold'} sx={{textDecoration:'underline'}} style={{ wordWrap: "break-word" }}>
+        {prop.name}
+    </Typography>
+    </ThemeProvider>
+);
+export const TYPOGRAPHY_PLAY_ACTOR = prop =>(
+    <ThemeProvider theme={themeTypH6}>
+    <Typography variant={'h6'} width={'90%'} textAlign={'center'}
+                color={white_EC} fontFamily={PoppinsFont} fontWeight={'normal'} style={{ wordWrap: "break-word" }}>
+        {prop.name}
+    </Typography>
+    </ThemeProvider>
+)
