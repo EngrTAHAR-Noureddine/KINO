@@ -13,6 +13,7 @@ import {
     TYPE
 } from "../Themes/String/String";
 import React from "react";
+import {PlayVideo} from "../Themes/Elements/play_video";
 
 export function Detail_movie(){
     return(
@@ -26,10 +27,7 @@ export function Detail_movie(){
             >
                 <Grid item  xs={5} width={'100%'} height={'100%'} p={1}  >
                     <Box width={'100%'} height={'100%'} >
-                        <Box component="img"
-                             width={'100%'} height={'100%'}
-                             alt="img" src={dark}
-                             bgcolor={'blue'}/>
+                        <PlayVideo url={"https://www.youtube.com/embed/IeiJO1eUEiU"}/>
                     </Box>
                 </Grid>
                 <Grid item  xs ={7} width={'100%'} height={'100%'}  p={1}>

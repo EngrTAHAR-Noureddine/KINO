@@ -75,5 +75,8 @@ export const TYPE = 'Type: ';
 export const QUALITY = 'Quality: ';
 export const DURATION = 'Duration: ';
 export const SUBTITLES = 'Subtitles: ';
+export const NEXT = 'Next';
+export const PREVIOUS = 'Previous';
+export const COMMENTS_NOT_EXIST = 'There are no comments';
 
 
