@@ -10,10 +10,10 @@ import React from "react";
 import {MORE, SIGN_IN} from "../String/String";
 import {
     black_20,
-    black_30, black_80,
+    black_30, black_60, black_80,
     blue_0A,
     divider_B1,
-    green_34,
+    green_34, grey_36,
     more_AE,
     white_100,
     white_20,
@@ -138,5 +138,22 @@ export  const DOWNLOAD_BUTTON = (prop)=>(
             }}
             onClick={prop.handleClickOpen}>
        <TYPOGRAPHY_SIGN_WITH text={prop.title}/>
+    </Button>
+);
+
+export const NEXT_PLAY_BUTTON = (prop)=>(
+    <Button sx={{
+        width:'90%',
+        height:'90%',
+        textTransform:'none',
+        fontFamily:PoppinsFont,
+        fontSize:'1rem',
+        borderRadius:2,
+        "&, &:hover":{
+            backgroundColor:black_60,
+            color:white_100
+        },
+        m:0}}>
+        {prop.item}
     </Button>
 )
