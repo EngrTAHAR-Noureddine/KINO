@@ -1,34 +1,40 @@
-import {Box} from "@mui/material";
+import {white_05} from "../Themes/Styles/Color";
+import {Box, Grid} from "@mui/material";
 import dark from "../Asset/dark.jpg";
+import {TYPOGRAPHY_DETAILS} from "../Themes/Styles/Typographies";
+import {
+    CLASSIFICATION,
+    COUNTRY,
+    DURATION,
+    LANGUAGE,
+    NAME_MOVIE,
+    QUALITY,
+    SUBTITLES,
+    TYPE
+} from "../Themes/String/String";
 import React from "react";
-import {STORY} from "../Themes/String/String";
-import {Header_Movie_Details} from "../Components/Header_Movie_Details";
-import {Detail_movie} from "../Components/detail_movie";
 
-export function Movie_Details() {
+export function Detail_movie(){
     return(
-        <Box flexGrow={1} width={'100%'} height={'100%'}>
-            <Header_Movie_Details title={'Dark'} rating={'9.7'} story={STORY} image={dark}/>
-            <Detail_movie/>
+        <Box flexGrow={1} m={1} mx={5} height={{xs:'70vh', md:'50vh'}}
+             borderRadius={5} bgcolor={white_05}>
 
-            <Box flexGrow={1} m={1} mx={5} height={'50vh'}>
+            <Grid container xs={12} width={'100%'} height={'100%'}
+                  direction={{xs:'column-reverse', md:'row-reverse'}}
+                  justifyContent='center' alignItems='center'
 
-
-            </Box>
-
-        </Box>
-    )
-}
-
-/*
-<Box component="img"
+            >
+                <Grid item  xs={5} width={'100%'} height={'100%'} p={1}  >
+                    <Box width={'100%'} height={'100%'} >
+                        <Box component="img"
                              width={'100%'} height={'100%'}
                              alt="img" src={dark}
                              bgcolor={'blue'}/>
-* */
-
-/*
-<Grid container xs={12} width={'100%'} height={'100%'}
+                    </Box>
+                </Grid>
+                <Grid item  xs ={7} width={'100%'} height={'100%'}  p={1}>
+                    <Box width={'100%'} height={'100%'}>
+                        <Grid container xs={12} width={'100%'} height={'100%'}
                               direction={'column'} justifyContent='center' alignItems='center'>
                             <Grid item xs={1} width={'100%'}height={'100%'} >
                                 <TYPOGRAPHY_DETAILS item={NAME_MOVIE+'Dark'}/>
@@ -56,4 +62,10 @@ export function Movie_Details() {
                             </Grid>
 
                         </Grid>
-* */
+                    </Box>
+                </Grid>
+            </Grid>
+
+        </Box>
+    )
+}

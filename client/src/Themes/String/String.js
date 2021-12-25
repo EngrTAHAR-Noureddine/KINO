@@ -60,3 +60,20 @@ export const FILTER_LIST = [
 export const LIST_SHORTCUTS = ['List','2021' ,'Trending'];
 
 export const STORY='When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids.';
+
+export const ACTOR = 'Actors';
+export const SEASONS = 'Seasons';
+export const EPISODES = 'Episodes';
+export const SIMILAR = 'Similar';
+export const COMMENTS = 'Comments';
+
+export const NAME_MOVIE = 'Name: ';
+export const CLASSIFICATION = 'Classification: ';
+export const COUNTRY = 'Country: ';
+export const LANGUAGE = 'Language: ';
+export const TYPE = 'Type: ';
+export const QUALITY = 'Quality: ';
+export const DURATION = 'Duration: ';
+export const SUBTITLES = 'Subtitles: ';
+
+

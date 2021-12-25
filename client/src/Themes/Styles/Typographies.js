@@ -189,3 +189,15 @@ export const TYPOGRAPHY_STORY = (prop)=>(
         </Typography>
     </ThemeProvider>
 );
+export const TYPOGRAPHY_DETAILS = (prop)=>(
+    <ThemeProvider theme={themeTypH6}>
+        <Typography variant={'h6'} width={'inherit'} textAlign={'left'}
+                    color={white_EC}
+                    fontFamily={PoppinsFont}
+                    fontWeight={'normal'}
+                    style={{ wordWrap: "break-word" }}
+        >
+            {prop.item}
+        </Typography>
+    </ThemeProvider>
+);
