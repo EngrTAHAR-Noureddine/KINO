@@ -10,7 +10,7 @@ import React from "react";
 import {MORE, SIGN_IN} from "../String/String";
 import {
     black_20,
-    black_30,
+    black_30, black_80,
     blue_0A,
     divider_B1,
     green_34,
@@ -116,4 +116,14 @@ export const SIGN_BUTTON = (prop)=>(
             <TYPOGRAPHY_SIGN_TITLE title={prop.type}/>
         </Button>
     </Box>
+);
+
+export const CONTAINER_NUMBER_BUTTON = (prop) =>(
+    <Button sx={{backgroundColor:black_80,
+        color:white_100,p:2, px:10, margin:2, borderRadius:5, fontSize:'1rem',
+        "&:hover":{
+            backgroundColor:blue_0A
+        }}}>
+        {prop.item}
+    </Button>
 )

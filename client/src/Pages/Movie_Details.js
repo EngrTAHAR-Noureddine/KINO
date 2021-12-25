@@ -1,14 +1,13 @@
-import {Box, Grid} from "@mui/material";
+import {Box, Button, Grid} from "@mui/material";
 import dark from "../Asset/dark.jpg";
 import React from "react";
-import {ACTOR, STORY} from "../Themes/String/String";
+import {ACTOR, EPISODES, SEASONS, STORY} from "../Themes/String/String";
 import {Header_Movie_Details} from "../Components/Header_Movie_Details";
 import {Detail_movie} from "../Components/detail_movie";
-import {TYPOGRAPHY_SEARCH_RESULT} from "../Themes/Styles/Typographies";
-import {flex_styles} from "../Themes/Styles/styles";
 import {AvatarActor} from "../Themes/Elements/Avatar_Actor";
-import {grey_36, white_30} from "../Themes/Styles/Color";
 import {SectionDetail} from "../Components/section_detail";
+import {black_80, blue_0A, grey_36, white_100} from "../Themes/Styles/Color";
+import {CONTAINER_NUMBER_BUTTON} from "../Themes/Elements/Buttons";
 
 export function Movie_Details() {
     const list  = [1,2,3,4,5,6];
@@ -20,6 +19,21 @@ export function Movie_Details() {
                 {list.map((item)=>(
 
                     <AvatarActor item={item}/>
+
+                ))}
+            </SectionDetail>
+
+            <SectionDetail title={SEASONS}>
+                {list.map((item)=>(
+
+                   <CONTAINER_NUMBER_BUTTON item={item}/>
+
+                ))}
+            </SectionDetail>
+            <SectionDetail title={EPISODES}>
+                {list.map((item)=>(
+
+                    <CONTAINER_NUMBER_BUTTON item={item}/>
 
                 ))}
             </SectionDetail>
