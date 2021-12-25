@@ -1,4 +1,4 @@
-import {Box, Button, Grid} from "@mui/material";
+import {Box, Grid,} from "@mui/material";
 import dark from "../Asset/dark.jpg";
 import React from "react";
 import {ACTOR, EPISODES, SEASONS, STORY} from "../Themes/String/String";
@@ -6,8 +6,10 @@ import {Header_Movie_Details} from "../Components/Header_Movie_Details";
 import {Detail_movie} from "../Components/detail_movie";
 import {AvatarActor} from "../Themes/Elements/Avatar_Actor";
 import {SectionDetail} from "../Components/section_detail";
-import {black_80, blue_0A, grey_36, white_100} from "../Themes/Styles/Color";
 import {CONTAINER_NUMBER_BUTTON} from "../Themes/Elements/Buttons";
+import {ListDownload} from "../Components/list_download";
+import {VideoPlay} from "../Components/Video_play";
+
 
 export function Movie_Details() {
     const list  = [1,2,3,4,5,6];
@@ -38,8 +40,23 @@ export function Movie_Details() {
                 ))}
             </SectionDetail>
 
-            <Box flexGrow={1} mx={5} height={'90vh'} bgcolor={'blue'}>
-
+            <Box flexGrow={1} mx={5} height={'100vh'} bgcolor={'blue'}>
+                <Grid container xs={12}
+                      width={'100%'}
+                      height={'100%'}
+                      direction={{xs:'column', lg:'row'}}
+                      justifyContent="flex-start"
+                      alignItems="flex-start"
+                      sx={{flexWrap: 'wrap'}}
+                      bgcolor={'red'}
+                >
+                    <Grid item height={'100%'} width={'100%'} xs={3} sm={3} lg={3} xl={2}    bgcolor={'darkcyan'}>
+                        <ListDownload list={list}/>
+                    </Grid>
+                    <Grid item  height={'100%'} width={'100%'} xs={9} sm={9} lg={9} xl={10} bgcolor={'darkgreen'}>
+                        <VideoPlay/>
+                    </Grid>
+                </Grid>
             </Box>
 
 

@@ -66,7 +66,7 @@ export const SEASONS = 'Seasons';
 export const EPISODES = 'Episodes';
 export const SIMILAR = 'Similar';
 export const COMMENTS = 'Comments';
-
+export const DOWNLOAD= 'Download';
 export const NAME_MOVIE = 'Name: ';
 export const CLASSIFICATION = 'Classification: ';
 export const COUNTRY = 'Country: ';

@@ -3,7 +3,7 @@ import {
     TYPOGRAPHY_CONTENT_CARD_MOVIE,
     TYPOGRAPHY_MENU_XL,
     TYPOGRAPHY_POPUP_MENU,
-    TYPOGRAPHY_SHORTCUT_LIST, TYPOGRAPHY_SIGN_TITLE
+    TYPOGRAPHY_SHORTCUT_LIST, TYPOGRAPHY_SIGN_TITLE, TYPOGRAPHY_SIGN_WITH
 } from "../Styles/Typographies";
 import {ArrowDropDown, ArrowDropUp, ArrowForwardIosOutlined, Star} from "@mui/icons-material";
 import React from "react";
@@ -125,5 +125,18 @@ export const CONTAINER_NUMBER_BUTTON = (prop) =>(
             backgroundColor:blue_0A
         }}}>
         {prop.item}
+    </Button>
+);
+
+export  const DOWNLOAD_BUTTON = (prop)=>(
+    <Button fullWidth
+            disabled={prop.matches}
+            sx={{textTransform:'none',
+                "&, &:hover":{
+                    backgroundColor:'transparent'
+                }
+            }}
+            onClick={prop.handleClickOpen}>
+       <TYPOGRAPHY_SIGN_WITH text={prop.title}/>
     </Button>
 )
