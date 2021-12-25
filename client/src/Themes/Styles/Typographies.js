@@ -72,6 +72,7 @@ export const TYPOGRAPHY_POPUP_MENU = (prop) => (
 );
 
 export const TYPOGRAPHY_SEARCH_RESULT = (prop)=>(
+    <ThemeProvider theme={RESPONSIVE_THEME}>
     <Typography variant={'h5'} width={'inherit'} height={'auto'} textAlign={'left'}
                 color={white_EC}
                 fontFamily={PoppinsFont}
@@ -80,6 +81,7 @@ export const TYPOGRAPHY_SEARCH_RESULT = (prop)=>(
                 >
         {prop.item}
     </Typography>
+    </ThemeProvider>
 )
 export const TYPOGRAPHY_NAME_PERSON = (prop)=>(
     <Typography variant={'h4'} width={'100%'} height={'100%'} textAlign={'center'}
