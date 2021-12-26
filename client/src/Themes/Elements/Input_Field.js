@@ -7,14 +7,14 @@ import {white_100} from "../Styles/Color";
 
 export  function InputField(prop) {
     return(
-        <Box flexGrow={1} px={5}>
+        <Box flexGrow={1} px={{xs:1,sm:2,md:5}}>
             <TYPOGRAPHY_STYLE_EMAIL_PASSWORD title={prop.title}/>
             <OutlinedInput
                 fullWidth={true}
                 id="outlined-adornment-password"
                 type={prop.type}
                 placeholder={prop.placeholder}
-                sx={{ borderRadius: 1000,border:1, borderColor:white_100 , color:white_100 }}
+                sx={{ borderRadius: 1000,border:1, borderColor:white_100 , color:white_100}}
             />
         </Box>
     )
@@ -43,7 +43,7 @@ export function PasswordField(prop) {
         event.preventDefault();
     };
     return(
-        <Box flexGrow={1} px={5}>
+        <Box flexGrow={1} px={{xs:1,sm:2,md:5}}>
             <TYPOGRAPHY_STYLE_EMAIL_PASSWORD title={prop.title}/>
             <OutlinedInput
                 fullWidth={true}
@@ -51,7 +51,7 @@ export function PasswordField(prop) {
                 type={values.showPassword ? "text" : "password"}
                 onChange={handleChange("password")}
                 placeholder={prop.placeholder}
-                sx={{ borderRadius: 1000,border:1, borderColor: white_100, color: white_100 }}
+                sx={{ borderRadius: 1000,border:1, borderColor: white_100, color: white_100}}
                 endAdornment={
                     <InputAdornment position="end">
                         <IconButton

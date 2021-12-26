@@ -17,7 +17,7 @@ function App() {
   return (
     <Paper  elevation={0} style={{width : '100%', height:'auto', backgroundColor:"transparent" , border:'none', borderRadius:'none', padding:0, margin:0}}>
         <CustomAppBar/>
-        <ListMovies/>
+        <Sign type={SIGN_UP}/>
     </Paper>
   );
 }

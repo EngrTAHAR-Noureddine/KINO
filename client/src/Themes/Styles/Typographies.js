@@ -151,13 +151,13 @@ export const TYPOGRAPHY_SIGN_WITH = (prop) => (
 
 export const TYPOGRAPHY_IF_HAVE_ACCOUNT = (prop) => (
     <ThemeProvider theme={RESPONSIVE_THEME}>
-        <Box style={flex_styles.row_center} flexGrow={1} px={10}>
-            <Typography flexGrow={1} variant={'h6'}
+        <Box style={flex_styles.row_center} flexGrow={1} px={{xs:0, md:10}}>
+            <Typography flexGrow={1} variant={'subtitle1'}
                         color={white_100}
                         fontFamily={PoppinsFont} textAlign={'right'} pr={1}>
                 {prop.text}
             </Typography>
-            <Typography  flexGrow={1} variant={'h6'}
+            <Typography  flexGrow={1} variant={'subtitle1'}
                         color={blue_0A}
                         fontFamily={PoppinsFont} sx={{textDecoration:'underline'}} textAlign={'left'}>
                 {prop.linkText}
