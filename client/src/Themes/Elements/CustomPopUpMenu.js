@@ -7,19 +7,17 @@ import { black_80, white_100} from "../Styles/Color";
 
 
 export function CustomPopUpMenu(prop) {
-    const [open, setState] = useState(false);
-    const [selected, setSelector] = useState(prop.selected);
+    const [open, setOpenPopUpMenu] = useState(false);
 
     const Toggle = ()=>{
-        setState(!open)
+        setOpenPopUpMenu(!open)
     }
     const Closing = () => {
-        setState(false)
+        setOpenPopUpMenu(false)
     }
     const Choose = (index) => {
-        setSelector(prop.list[index]);
-        prop.callback(prop.list[index],prop.selected);
-        setState(false)
+        prop.setSelect({...prop.selector,[prop.type]:prop.list[index]});
+        setOpenPopUpMenu(false)
     }
 
     function renderRow(props) {
@@ -37,7 +35,7 @@ export function CustomPopUpMenu(prop) {
     }
     return(
         <Box>
-            <POPUP_MENU_BUTTON state={open}  toggle={Toggle} item={selected}/>
+            <POPUP_MENU_BUTTON state={open}  toggle={Toggle} item={prop.selected}/>
 
             <Box display={(open)?'flex':'none'}
                  zIndex={(open)?10:0} position={(open)?'absolute':'static'}

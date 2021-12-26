@@ -24,7 +24,7 @@ export const HAVE_ACCOUNT = 'do you have an account?';
 
 
 
-//TODO don't forget translate in filter ??
+
 export const FILTER_LIST = [
 
     {
@@ -54,6 +54,10 @@ export const FILTER_LIST = [
     {
         type:'Type',
         list:['Action','History','Crime','Drama','War','Sci-fi','Romantic']
+    },
+    {
+        type:'Translate',
+        list:['English','Arabic','French','German','Japanese','Chinese','Spanish']
     }
 ];
 

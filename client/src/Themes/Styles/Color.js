@@ -23,7 +23,7 @@ export const blue_36 = '#36A4FA';
 export const blue_0A = '#0A84FF';
 export const white_7070 = '#707070';
 export const green_34 = '#34C85A';
-
+export const black_1212 = '#121212';
 export const grey_36 = '#363638';
 
 

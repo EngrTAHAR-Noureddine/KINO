@@ -88,19 +88,22 @@ export const POPUP_MENU_BUTTON = (prop)=>(
         <TYPOGRAPHY_POPUP_MENU item={prop.item}/>
     </Button>
 );
-export const FILTER_BUTTON = () => (
-    <Button sx={{
-        color:white_100,
-        backgroundColor:'green',
-        textTransform: 'none',
-        px:2,
-        "&,&:focus,&:hover,&:active":{
-            backgroundColor:'green'
-        },
-        fontFamily:PoppinsFont,
-        fontWeight:'900',
-        fontSize:'1.2rem'
-    }}>
+export const FILTER_BUTTON = (prop) => (
+    <Button
+        onClick={prop.onClicked}
+        sx={{
+                color:white_100,
+                backgroundColor:'green',
+                textTransform: 'none',
+                px:2,
+                "&,&:focus,&:hover,&:active":{
+                    backgroundColor:green_34
+                },
+                fontFamily:PoppinsFont,
+                fontWeight:'900',
+                fontSize:'1.2rem'
+            }}
+    >
         Filter
     </Button>
 )
