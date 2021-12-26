@@ -95,7 +95,7 @@ export const TYPOGRAPHY_NAME_PERSON = (prop)=>(
 );
 
 export const TYPOGRAPHY_GIG_TITLE_UNDERLINED = (prop)=>(
-    <Box flexGrow={1} px={5}>
+    <Box flexGrow={1} px={5} >
         <Typography variant={'h5'} textAlign={'center'} fontFamily={PoppinsFont}
                     color={'white'} sx={{borderBottom:1, borderColor:'white'}} mb={5}>
             {prop.what} ({prop.number})
