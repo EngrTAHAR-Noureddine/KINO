@@ -1,6 +1,5 @@
 import {white_05} from "../Themes/Styles/Color";
 import {Box, Grid} from "@mui/material";
-import dark from "../Asset/dark.jpg";
 import {TYPOGRAPHY_DETAILS} from "../Themes/Styles/Typographies";
 import {
     CLASSIFICATION,
@@ -22,19 +21,19 @@ export function Detail_movie(){
 
             <Grid container xs={12} width={'100%'} height={'100%'}
                   direction={{xs:'column-reverse', md:'row-reverse'}}
-                  justifyContent='center' alignItems='center'
-
+                  justifyContent='space-between' alignItems='center'
+                  p={2}
             >
                 <Grid item  xs={5} width={'100%'} height={'100%'} p={1}  >
                     <Box width={'100%'} height={'100%'} >
                         <PlayVideo url={"https://www.youtube.com/embed/IeiJO1eUEiU"}/>
                     </Box>
                 </Grid>
-                <Grid item  xs ={7} width={'100%'} height={'100%'}  p={1}>
+                <Grid item  xs ={6} width={'100%'} height={'100%'}  p={1}>
                     <Box width={'100%'} height={'100%'}>
                         <Grid container xs={12} width={'100%'} height={'100%'}
                               direction={'column'} justifyContent='center' alignItems='center'>
-                            <Grid item xs={1} width={'100%'}height={'100%'} >
+                            <Grid item xs={1} width={'100%'} height={'100%'} >
                                 <TYPOGRAPHY_DETAILS item={NAME_MOVIE+'Dark'}/>
                             </Grid>
                             <Grid item xs={1} width={'100%'} height={'100%'} >

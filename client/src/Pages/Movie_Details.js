@@ -1,4 +1,4 @@
-import {Box} from "@mui/material";
+import { Box} from "@mui/material";
 import dark from "../Asset/dark.jpg";
 import React from "react";
 import {
@@ -16,8 +16,8 @@ import {SectionDetail} from "../Components/section_detail";
 import {CONTAINER_NUMBER_BUTTON} from "../Themes/Elements/Buttons";
 import {WatchDownloadMovie} from "../Themes/Elements/movie_watch_&_ download_section";
 import {TYPOGRAPHY_NOT_EXIST} from "../Themes/Styles/Typographies";
-
 import {RatingUser} from "../Components/Rate_user";
+import {CommentUser} from "../Themes/Elements/Comment_user";
 
 
 export function Movie_Details() {
@@ -58,6 +58,8 @@ export function Movie_Details() {
             </SectionDetail>
 
             <WatchDownloadMovie/>
+
+           <CommentUser/>
 
             <SectionDetail title={COMMENTS}>
                 <TYPOGRAPHY_NOT_EXIST text={COMMENTS_NOT_EXIST}/>
