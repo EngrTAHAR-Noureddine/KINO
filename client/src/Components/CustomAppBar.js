@@ -8,9 +8,22 @@ import {SearchBar} from "../Themes/Elements/SearchBar";
 import {MENU_BUTTON} from "../Themes/Elements/IconButton";
 import {ScrollToColor} from '../Themes/Animation/ScrollToColor';
 import {flex_styles} from "../Themes/Styles/styles";
+import {CustomDrawerMenuAppBar} from "./CustomDrawerMenuAppBar";
+import {useState} from "react";
+
+
+
 
 
 function CustomAppBar() {
+    const [open, setOpen] = useState(false);
+    const handleClickOpen  = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <Box sx={{flexGrow: 1}} bgcolor={"transparent"}>
@@ -20,7 +33,7 @@ function CustomAppBar() {
                     <Grid container xs={12}>
                         <Grid item xs={6} xl={4} bgcolor={'transparent'} style={flex_styles.row_left}>
 
-                            <MENU_BUTTON/>
+                            <MENU_BUTTON clickOpen={handleClickOpen}/>
                             <TYPOGRAPHY_LOGO/>
 
                         </Grid>
@@ -66,6 +79,7 @@ function CustomAppBar() {
                             </div>
                         </Grid>
                     </Grid>
+                    <CustomDrawerMenuAppBar handleClickOpen={handleClickOpen} handleClose={handleClose} open={open} />
                 </Toolbar>
             </AppBar>
             </ScrollToColor>

@@ -13,7 +13,7 @@ import {
     black_30, black_60, black_80,
     blue_0A,
     divider_B1,
-    green_34, grey_36,
+    green_34,
     more_AE,
     white_100,
     white_20,

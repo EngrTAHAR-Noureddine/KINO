@@ -1,8 +1,9 @@
 import {MenuRounded, SearchRounded} from "@mui/icons-material";
 import {IconButton} from "@mui/material";
 
-export const MENU_BUTTON = () => (
+export const MENU_BUTTON = (prop) => (
     <IconButton
+        onClick={prop.clickOpen}
         size="large"
         edge="start"
         color="inherit"
