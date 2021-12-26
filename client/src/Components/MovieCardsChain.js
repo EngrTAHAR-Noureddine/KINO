@@ -29,8 +29,8 @@ export function MovieCardsChain(prop) {
                 <Grid container xs={12} flexGrow={1} spacing={2} style={flex_styles.row_center}>
                     {
 
-                        prop.list.map((item)=>(
-                            <Grid item xs={6} md={4} xl={2} style={flex_styles.row_center}>
+                        prop.list.map(()=>(
+                            <Grid item xs={12} sm={6} md={4} xl={2} style={flex_styles.row_center}>
                                 <MovieCard/>
                             </Grid>))
 
