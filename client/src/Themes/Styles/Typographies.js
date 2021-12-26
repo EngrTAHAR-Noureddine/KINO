@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {PoppinsFont} from "../Fonts/Fonts";
-import {COMMENTS_NOT_EXIST, FORGET_PASSWORD, LOGO} from "../String/String";
+import {COMMENTS_NOT_EXIST, FORGET_PASSWORD, LOGO, YOUR_RATING} from "../String/String";
 import {ThemeProvider} from "@emotion/react";
 import {RESPONSIVE_THEME, themeTyp, themeTypH6} from "../Theme/Themes";
 import React from "react";
@@ -223,4 +223,11 @@ export const TYPOGRAPHY_PLAY_ACTOR = prop =>(
 
 export const TYPOGRAPHY_NOT_EXIST = (prop) =>(
     <Typography p={1} variant={'h6'} color={white_100} textAlign={'center'}> {prop.text} </Typography>
+)
+export const TYPOGRAPHY_YOUR_RATING = (prop)=>(
+    <ThemeProvider theme={RESPONSIVE_THEME}>
+        <Typography variant={'h5'} color={white_100} fontFamily={PoppinsFont} sx={{wordWrap: "break-word" }}>
+            {prop.title}
+        </Typography>
+    </ThemeProvider>
 )

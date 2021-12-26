@@ -2,6 +2,7 @@ import {Box, IconButton} from "@mui/material";
 import {CircleRounded} from "@mui/icons-material";
 import React, {useEffect, useState} from "react";
 import {flex_styles} from "../Styles/styles";
+import {blue_0A, white_30} from "../Styles/Color";
 
 export function RatingBar(prop) {
 
@@ -46,7 +47,7 @@ export function RatingBar(prop) {
                     <IconButton onMouseEnter={()=>mouseEnter(index)}
                                 onMouseLeave={()=>mouseLeave(index)}
                                 onClick={()=>onCLicked(index)} key={index}>
-                        <CircleRounded sx={{color:(item==="true")?'red':'white'}}/>
+                        <CircleRounded sx={{color:(item==="true")?blue_0A:white_30}}/>
                     </IconButton>
                 ))
             }
