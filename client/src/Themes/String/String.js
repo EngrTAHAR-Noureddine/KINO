@@ -78,5 +78,7 @@ export const SUBTITLES = 'Subtitles: ';
 export const NEXT = 'Next';
 export const PREVIOUS = 'Previous';
 export const COMMENTS_NOT_EXIST = 'There are no comments';
+export const LIKE_IT = 'I like it';
+export const HATE_IT = 'I hate it';
 
 
