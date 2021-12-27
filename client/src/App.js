@@ -9,6 +9,7 @@ import {PageNotFound} from "./Pages/404";
 import {Sign} from "./Pages/Sign";
 import {SIGN_IN, SIGN_UP} from "./Themes/String/String";
 import {Movie_Details} from "./Pages/Movie_Details";
+import {Settings} from "./Pages/Settings";
 
 
 //<Sign type={SIGN_IN}/>
@@ -17,7 +18,7 @@ function App() {
   return (
     <Paper  elevation={0} style={{width : '100%', height:'auto', backgroundColor:"transparent" , border:'none', borderRadius:'none', padding:0, margin:0}}>
         <CustomAppBar/>
-        <Sign type={SIGN_UP}/>
+        <Settings/>
     </Paper>
   );
 }

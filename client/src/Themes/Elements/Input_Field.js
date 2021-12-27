@@ -11,6 +11,7 @@ export  function InputField(prop) {
             <TYPOGRAPHY_STYLE_EMAIL_PASSWORD title={prop.title}/>
             <OutlinedInput
                 fullWidth={true}
+                disabled={prop.disabled}
                 id="outlined-adornment-password"
                 type={prop.type}
                 placeholder={prop.placeholder}
@@ -47,6 +48,7 @@ export function PasswordField(prop) {
             <TYPOGRAPHY_STYLE_EMAIL_PASSWORD title={prop.title}/>
             <OutlinedInput
                 fullWidth={true}
+                disabled={prop.disabled}
                 id="outlined-adornment-password"
                 type={values.showPassword ? "text" : "password"}
                 onChange={handleChange("password")}

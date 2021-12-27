@@ -21,6 +21,7 @@ export const DONT_HAVE_ACCOUNT = 'don\'t have account?';
 export const NAME = 'Name:';
 export const OR_SIGN_UP_WITH = 'or sign up with:';
 export const HAVE_ACCOUNT = 'do you have an account?';
+export const REMOVE_ACCOUNT = 'do you want to remove your account?';
 
 
 
